@@ -1,0 +1,16 @@
+{{template "header" .}}
+<h1>APPLY</h1>
+
+{{template "nav-main"}}
+
+{{if .FirstName}}
+Your name is {{.FirstName}}
+{{end}}
+
+<form class="" action="/apply" method="post">
+<label for="fnm"></label>
+<input type="text" name="firstName" id="fnm">
+<input type="submit">
+</form>
+{{template "footer"}}
+
